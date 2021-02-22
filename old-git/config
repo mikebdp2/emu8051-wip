@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = http://git.code.paulk.fr/emu8051.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "wip"]
+	remote = origin
+	merge = refs/heads/wip
