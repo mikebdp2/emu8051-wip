@@ -1,0 +1,107 @@
+2014-01-14: emu8051-2.0.1 has been released
+
+        Convert manpage to UTF-8
+
+        Do not display registers at CLI version startup
+
+        Dont exit application in case of hexfile reading failure
+
+        Fix C99 standard types uintN_t
+
+        Fix test script to work in external build directory
+
+        Add support for GNU readline (adds commands history).
+
+        Allow hex numbers to begin with 0x or $ prefix in CLI version
+
+        Allow to set all SFR registers in CLI version
+
+        Convert CLI version input parsing to Lex/Yacc
+
+        Remove address parameter from RUN and TRACE CLI commands
+
+        Add better error checking when loading invalid hex files
+
+        Allow EM command to be specified without arguments
+
+        Add two timers (independent of internal 8051 timers)
+
+        See the file 'ChangeLog' for further details.
+
+2014-01-14: emu8051-2.0.0 has been released
+
+        Fix error with ADDC instruction: the carry flag was not added to the
+        result.
+
+        Fix bug when processing interrupts
+
+        Fix bug with timers mode 0 (8 bits with 5-bit prescaler)
+
+        Fix error with timer1 being written to timer0
+
+        Fix error with EM command in CLI mode
+
+        Add option to automatically run and stop CLI emulator for
+        regression testing
+
+        Add parity bit update each instruction cycle
+
+        Fix bug with MOV DPTR,#data16 instruction
+
+        Fix bugs with ORL and ANL instructions
+
+        Fix error with ADD instruction and AC bit
+
+        Fix error with JMP @A,DPTR instruction
+
+        Fix error with RETI instruction
+
+        Add Timers 0 and 1 to SFR window
+
+        Add option to specify memory sizes
+
+        Add live option to change windows layout (8 or 16 bytes width)
+
+        Add external memory window
+
+        Memory and register windows values can now be edited
+
+        Save paned positions and main window size to config file
+        Add support for saving UI settings to config file
+
+        Replace fixed frames with scrollable and resizable windows
+
+        Update code to compile with GTK3
+
+        See the file 'ChangeLog' for further details.
+
+2013-09-07: emu8051-1.1.2 has been released
+        Fix error with CJNE instruction.
+
+2011-12-11: emu8051-1.1.1 has been released (from emu8051-1.1.1-rc2).
+
+2011-11-20: emu8051-1.1.1-rc2 has been released.
+        Added optional size parameter when dumping memory.
+        Created two separate executables, emu8051-cli (default)
+          and optional emu8051-gtk if Gtk+ is detected.
+        See the file 'ChangeLog' for further details.
+
+2011-10-29: emu8051-1.1.1-rc1 has been released.
+        Fixed SJMP error and improved columns and rows sizing
+
+2010-03-19: emu8051-1.1.0 has been released.
+        Reintroduced the console mode if no GTK+ librairies are
+        detected.
+
+2009-02-09: emu8051-1.0.2 has been released.
+        Updated Free Software Foundation address.
+
+2008-11-05: emu8051-1.0.1 has been released.
+        See the file 'ChangeLog' for further details.
+
+2008-04-28: emu8051-1.0.0 has been released.
+        Removed gtk+-1.0 support, now requires gtk+-2
+
+2005-05-07: emu8051-0.1.0 has been released.
+        Fixed bug with CJNE instruction and autoconf files cleanup.
+        See the file 'ChangeLog' for further details.

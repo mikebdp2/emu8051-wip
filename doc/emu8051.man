@@ -1,0 +1,33 @@
+.TH EMU8051 1 "May 2004" "emu8051" "User's Manual"
+
+.SH NAME
+emu8051 \- Simulator/emulator for the Intel 8051 family of microcontrollers
+
+.SH SYNOPSIS
+.B emu8051
+[\fIOPTION\fR]... [\fIFILENAME\fR]
+
+.SH DESCRIPTION
+\fBemu8051\fR is a simulator/emulator for the Intel 8051 family of microcontrollers. It is available in two versions: a console (text-only) version and a graphical version (using the GTK+ toolkit). This is an Open-Source project. The program can load Intel HEX files.
+
+Once loaded, a program can be run (it will run indefinitely or until a breakpoint is encountered). You can also use the STEP button to execute only a single instruction at a time and see the effects on registers and memory.
+
+It is written in C++, and uses Perl scripts to generate automatically C++ functions corresponding to each assembly instruction of the 8051 microcontroller.
+
+.SH "OPTIONS"
+
+.TP
+\fB\-h\fR
+display usage and exit
+.TP
+\fB\-version\fR
+output version information and exit
+
+.SH CREDITS
+\fBemu8051\fR was originally written by Jonathan St-André, Hugo Villeneuve <hugo@hugovil.com> and Pascal Fecteau.
+
+.SH COPYRIGHT
+\fBemu8051\fR is free; anyone may redistribute it to anyone under the terms
+stated in the GNU General Public License. A copy of the license is included in
+the \fBemu8051\fR distribution. You can also browse it online at
+.I http://www.gnu.org/copyleft/gpl.html
